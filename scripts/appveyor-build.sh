@@ -7,9 +7,9 @@ mkdir github.com/ultibohub
 cd github.com/ultibohub
 git clone https://github.com/ultibohub/Examples
 
-function compileExampleRPi1 {
+function compileExampleRPi2 {
     cd Examples/$1-$2/RPi2
-    appveyor AddMessage "compiling ultibo example $1 - pi2"
+    appveyor AddMessage "compiling ultibo example $1-$2 - pi2"
     /c/Ultibo/Core/fpc/3.1.1/bin/i386-win32/fpc \
      -B \
      -Tultibo \
