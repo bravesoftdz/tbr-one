@@ -6,7 +6,6 @@ then
     appveyor AddMessage "installing ultibo 1.2.009"
     curl -fsSL -o ultibo-installer.exe https://github.com/ultibohub/Core/releases/download/1.2.009/Ultibo-Core-1.2.009-Cucumber.exe
     ./ultibo-installer //verysilent
-fi
 
     ls /c/Ultibo
     appveyor AddMessage "building ultibo rtl using __buildrtl.bat from 1.2.185"
@@ -25,3 +24,4 @@ fi
     cd /c/Ultibo/Core/fpc/3.1.1/source
     cmd //c __buildrtl.bat
     cd /c/projects/tbr-one
+fi
