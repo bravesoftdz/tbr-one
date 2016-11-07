@@ -5,7 +5,7 @@ set -x
 
     appveyor AddMessage "installing ultibo 1.2.009"
     curl -fsSL -o ultibo-installer.exe https://github.com/ultibohub/Core/releases/download/1.2.009/Ultibo-Core-1.2.009-Cucumber.exe
-    ultibo-installer /verysilent
+    ./ultibo-installer /verysilent
     ls /c/Ultibo
     appveyor AddMessage "building ultibo rtl using __buildrtl.bat from 1.2.185"
     curl -fsSL -o ultibo-rtl-update.zip https://github.com/ultibohub/Core/archive/master.zip
