@@ -8,22 +8,20 @@ then
     ./ultibo-installer //verysilent
 fi
 
-#   ls /c/Ultibo
-#   appveyor AddMessage "building ultibo rtl using __buildrtl.bat from 1.2.185"
-#   curl -fsSL -o ultibo-rtl-update.zip https://github.com/ultibohub/Core/archive/master.zip
-#   ls *.zip
+    ls /c/Ultibo
+    appveyor AddMessage "building ultibo rtl using __buildrtl.bat from 1.2.185"
+    curl -fsSL -o ultibo-rtl-update.zip https://github.com/ultibohub/Core/archive/master.zip
+    ls *.zip
 
-#   7z x -oultibo-rtl-update ultibo-rtl-update.zip
-#   ls ultibo-rtl-update/Core-master/source/rtl/ultibo
-#   ls /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
-#   rm -rf /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
+    7z x -oultibo-rtl-update ultibo-rtl-update.zip
+    ls ultibo-rtl-update/Core-master/source/rtl/ultibo
+    ls /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
+    rm -rf /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
 
-#   cp -a ultibo-rtl-update/Core-master/source/rtl/ultibo /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
-#   ls /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
+    cp -a ultibo-rtl-update/Core-master/source/rtl/ultibo /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
+    ls /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
 
-#   copy scripts\__buildrtl.bat c:\Ultibo\Core\fpc\3.1.1\source
-#   cd c:\Ultibo\Core\fpc\3.1.1\source
-#   setlocal
-#   call __buildrtl.bat
-#   endlocal
+    cp -a scripts\__buildrtl.bat /c/Ultibo/Core/fpc/3.1.1/source
+    cd /c/Ultibo/Core/fpc/3.1.1/source
+    cmd //c __buildrtl.bat
     cd /c/projects/tbr-one
