@@ -1,5 +1,5 @@
 install: bash -c scripts/install-ultibo.sh
-build_script: bash -c build.sh
+build_script: bash -c ./build.sh
 artifacts:
   - path: tbr-one-build.zip
     name: rpi2 kernels for testing
