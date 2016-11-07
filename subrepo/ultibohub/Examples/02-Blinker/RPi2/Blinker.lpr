@@ -36,13 +36,13 @@ var
  we create that can be called from this unit (File, New Unit from the menu).}
 
 begin
- DemoStart;
  {Before we can turn the LED on or off we need to enable it which sets the GPIO
   pins to the appropriate function.}
  ActivityLEDEnable;
 
  {So that we can see what's happening, let's create a console window again.}
  WindowHandle:=ConsoleWindowCreate(ConsoleDeviceGetDefault,CONSOLE_POSITION_FULL,True);
+ DemoStart(WindowHandle);
 
  {Let's create a loop so that the blinking happens forever, or until you pull the
   power plug at least.

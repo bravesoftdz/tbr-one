@@ -43,11 +43,11 @@ var
  by Ultibo after the started process has completed.}
 
 begin
- DemoStart;
  {First we create a console window to write our text on, we make it the full
   size of the screen by specifying CONSOLE_POSITION_FULL and allow it to be the
   default window by passing True as the last parameter.}
  WindowHandle:=ConsoleWindowCreate(ConsoleDeviceGetDefault,CONSOLE_POSITION_FULL,True);
+ DemoStart(WindowHandle);
 
  {Next write some text on our newly created console window, we pass the handle
   of the console window created above to tell it where to write the text since

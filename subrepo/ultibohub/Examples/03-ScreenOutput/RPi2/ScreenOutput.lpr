@@ -40,9 +40,9 @@ var
 
 
 begin
- DemoStart;
  {Let's create a console window again but this time on the left side of the screen}
  Handle1:=ConsoleWindowCreate(ConsoleDeviceGetDefault,CONSOLE_POSITION_LEFT,True);
+ DemoStart(Handle1);
 
  {To prove that worked let's output some text on the console window}
  ConsoleWindowWriteLn(Handle1,'Welcome to Example 03 Screen Output');

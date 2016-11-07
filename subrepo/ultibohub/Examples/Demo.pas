@@ -1,25 +1,38 @@
 unit Demo;
 
 interface
-procedure DemoStart;
+uses
+ GlobalTypes;
+procedure DemoStart(SomeWindow:TWindowHandle);
 procedure DemoEnd;
 
 implementation
 uses
- Platform,Ultibo;
+ Console,Platform,SysUtils,Ultibo;
 
-procedure DemoStart;
+var
+ Window:TWindowHandle;
+
+procedure WriteLn(Line:String);
 begin
- while not DirectoryExists('c:'\') do
-  Sleep (100);
+ ConsoleWindowWriteLn(Window,Line); 
+end;
+procedure DemoStart(SomeWindow:TWindowHandle);
+begin
+ Window:=SomeWindow;
+ while not DirectoryExists('c:') do
+  begin
+   WriteLn('waiting for c:');
+   Sleep (100);
+  end;
  DeleteFile('c:\kernel7.img');
  CopyFile('c:\backup\kernel7.img','c:\kernel7.img',False);
+ WriteLn('kernel7.img has been restored');
 end;
-
 procedure DemoEnd;
 begin
+ WriteLn('Delaying 5 seconds before restart...');
  Sleep(5000);
  SystemRestart(0);
 end;
-
 end.
