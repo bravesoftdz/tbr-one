@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-set PROJECT=/c/Projects/tbr-one
+PROJECT=/c/Projects/tbr-one
 
 mkdir kernels
 
