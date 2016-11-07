@@ -1,1 +1,1 @@
-build_script: scripts/appveyor-build.sh
+build_script: bash -c scripts/appveyor-build.sh
