@@ -8,6 +8,8 @@ cd github.com/ultibohub
 git clone https://github.com/ultibohub/Examples
 cd Examples/01-HelloWorld/RPi2
 
+exit 0
+
 appveyor AddMessage "ultibo example 01 - pi2 - kernel7.img"
 /c/Ultibo/Core/fpc/3.1.1/bin/i386-win32/fpc \
  -B \
