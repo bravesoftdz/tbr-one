@@ -1,8 +1,8 @@
 #!/bin/bash
-set -x
 
 if [[ ! -e /c/Ultibo ]]
 then
+    set -x
     appveyor AddMessage "installing ultibo 1.2.009"
     curl -fsSL -o ultibo-installer.exe https://github.com/ultibohub/Core/releases/download/1.2.009/Ultibo-Core-1.2.009-Cucumber.exe
     ./ultibo-installer //verysilent
