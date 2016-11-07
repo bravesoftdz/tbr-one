@@ -8,7 +8,10 @@ procedure DemoEnd;
 
 implementation
 uses
- Console,Platform,SysUtils,Ultibo;
+ BCM2709,BCM2836,
+ Console,Devices,GlobalConfig,GlobalConst,Platform,
+ PlatformRpi2, RaspberryPi2,
+ SysUtils,Ultibo;
 
 var
  Window:TWindowHandle;
