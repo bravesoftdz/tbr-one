@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 #if exist c:\Ultibo goto :installed
 
