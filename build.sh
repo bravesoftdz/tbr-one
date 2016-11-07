@@ -26,4 +26,5 @@ compileExampleRPi2 02 Blinker
 compileExampleRPi2 03 ScreenOutput
 
 appveyor AddMessage "zip artifacts"
+rm -f tbr-one-build.zip
 7z a tbr-one-build.zip kernels/*.img
