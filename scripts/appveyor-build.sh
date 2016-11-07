@@ -14,6 +14,6 @@ appveyor AddMessage "ultibo example 01 - pi2 - kernel7.img"
  -Parm \
  -CpARMV7A \
  -WpRPI2B \
- @C:\Ultibo\Core\fpc\3.1.1\bin\i386-win32\RPI2.CFG \
+ @/c/Ultibo/Core/fpc/3.1.1/bin/i386-win32/RPI2.CFG \
  -O2 \
  HelloWorld.lpr
