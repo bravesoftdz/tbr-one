@@ -4,7 +4,7 @@ set -x
 mkdir kernels
 
 function compileExampleRPi2 {
-    cd $APPVEYOR_BUILD_FOLDER/subreo/ultibohub/Examples/$1-$2/RPi2
+    cd $APPVEYOR_BUILD_FOLDER/subrepo/ultibohub/Examples/$1-$2/RPi2
     appveyor AddMessage "compiling ultibo example $1-$2 - pi2"
     /c/Ultibo/Core/fpc/3.1.1/bin/i386-win32/fpc \
      -B \
