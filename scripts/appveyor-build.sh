@@ -21,7 +21,5 @@ appveyor AddMessage "ultibo example 01 - pi2 - kernel7.img"
 cp -a kernel7.img /c/Projects/tbr-one/output/01-kernel7.img
 
 appveyor AddMessage "zip artifacts"
-cd /c/Projects/tbr-one/output
-7z a ../kernel7.img.zip kernel7.img >> 7z.log
-cd ..
+7z a tbr-one-build.zip output/01-kernel7.img
 
