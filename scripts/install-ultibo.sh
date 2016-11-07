@@ -21,7 +21,7 @@ fi
     cp -a ultibo-rtl-update/Core-master/source/rtl/ultibo /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
     ls /c/Ultibo/Core/fpc/3.1.1/source/rtl/ultibo
 
-    cp -a scripts\__buildrtl.bat /c/Ultibo/Core/fpc/3.1.1/source
+    cp -a scripts/__buildrtl.bat /c/Ultibo/Core/fpc/3.1.1/source
     cd /c/Ultibo/Core/fpc/3.1.1/source
     cmd //c __buildrtl.bat
     cd /c/projects/tbr-one
