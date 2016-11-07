@@ -9,7 +9,7 @@ procedure DemoEnd;
 implementation
 uses
  GlobalConfig,GlobalConst,Console,Devices,Gpio,Platform,Threads,SysUtils,
- RaspberryPi2,PlatformRpi2,BCM2709,BCM2836,Ultibo;
+ PlatformRpi2,BCM2709,BCM2836,Ultibo;
 
 var
  Window:TWindowHandle;
