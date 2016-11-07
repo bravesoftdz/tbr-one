@@ -1,1 +1,4 @@
+install: bash -c scripts/install-ultibo.sh
 build_script: bash -c scripts/appveyor-build.sh
+cache:
+  - c:\Ultibo -> scripts/install-ultibo.cmd
