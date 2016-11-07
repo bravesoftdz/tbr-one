@@ -26,7 +26,8 @@ uses
   Framebuffer,
   BCM2836,
   BCM2709,
-  SysUtils;
+  SysUtils,
+  Demo;
 
 {We'll need a few more variables for this example.}
 var
@@ -39,6 +40,7 @@ var
 
 
 begin
+ DemoStart;
  {Let's create a console window again but this time on the left side of the screen}
  Handle1:=ConsoleWindowCreate(ConsoleDeviceGetDefault,CONSOLE_POSITION_LEFT,True);
 
@@ -115,6 +117,8 @@ begin
 
  {And say goodbye}
  ConsoleWindowWriteLn(Handle1,'All done, thanks for watching');
+
+ DemoEnd;
 
  {We're not doing a loop this time so we better halt this thread before it exits}
  ThreadHalt(0);

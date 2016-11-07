@@ -1,8 +1,8 @@
 install: bash -c scripts/install-ultibo.sh
-build_script: bash -c scripts/appveyor-build.sh
+build_script: bash -c build.sh
 artifacts:
   - path: tbr-one-build.zip
-    name: kernels for testing
+    name: rpi2 kernels for testing
 cache:
   - c:\Ultibo -> scripts/install-ultibo.cmd
 skip_commits:

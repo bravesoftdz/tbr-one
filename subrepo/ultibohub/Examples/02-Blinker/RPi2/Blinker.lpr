@@ -24,16 +24,19 @@ uses
   Console,
   Framebuffer,
   BCM2836,
-  BCM2709;
+  BCM2709,
+  Demo;
 
 {Declare some variables as well.}
 var
  WindowHandle:TWindowHandle;
+ LoopCounter:Integer;
 
 {Our code goes between the begin and end of the program file or in other units
  we create that can be called from this unit (File, New Unit from the menu).}
 
 begin
+ DemoStart;
  {Before we can turn the LED on or off we need to enable it which sets the GPIO
   pins to the appropriate function.}
  ActivityLEDEnable;
@@ -46,7 +49,7 @@ begin
 
   This loop will execute while the condition is true. Since the value True is always
   true then the loop will continue forever.}
- while True do
+ for LoopCounter:=1 to 10 do
   begin
    {Write to the console}
    ConsoleWindowWriteLn(WindowHandle,'Turning on the Activity LED');
@@ -71,6 +74,8 @@ begin
     happen faster or maybe you might try rearranging the code in the loop to do
     a double blink each time.}
   end;
+
+ DemoEnd;
 
  {We will never get to here, so there is no need for ThreadHalt() like in other
   examples.}

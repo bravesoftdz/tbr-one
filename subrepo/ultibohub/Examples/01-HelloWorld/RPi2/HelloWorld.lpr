@@ -29,7 +29,8 @@ uses
   Console,
   Framebuffer,
   BCM2836,
-  BCM2709;
+  BCM2709,
+  Demo;
 
 {We also need to declare a variable to hold a console window handle.}
 var
@@ -42,6 +43,7 @@ var
  by Ultibo after the started process has completed.}
 
 begin
+ DemoStart;
  {First we create a console window to write our text on, we make it the full
   size of the screen by specifying CONSOLE_POSITION_FULL and allow it to be the
   default window by passing True as the last parameter.}
@@ -64,6 +66,7 @@ begin
   from the begin..end block of the program. See the Wiki for more information on
   why but unless you are sure of what will happen it is best to simply halt this
   thread here.}
+ DemoEnd;
  ThreadHalt(0);
 end.
 
