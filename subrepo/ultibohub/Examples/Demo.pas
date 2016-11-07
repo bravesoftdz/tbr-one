@@ -8,10 +8,8 @@ procedure DemoEnd;
 
 implementation
 uses
- BCM2709,BCM2836,
- Console,Devices,GlobalConfig,GlobalConst,Platform,
- PlatformRpi2, RaspberryPi2,
- SysUtils,Ultibo;
+ GlobalConfig,GlobalConst,Console,Devices,Gpio,Platform,Threads,SysUtils,
+ RaspberryPi2,PlatformRpi2,BCM2709,BCM2836,Ultibo;
 
 var
  Window:TWindowHandle;
