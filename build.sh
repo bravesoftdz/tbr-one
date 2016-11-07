@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 
+date
 rm -rf kernels
 mkdir kernels
 
@@ -28,3 +29,4 @@ compileExampleRPi2 03 ScreenOutput
 appveyor AddMessage "zip artifacts"
 rm -f tbr-one-build.zip
 7z a tbr-one-build.zip kernels/*.img > 7z.log
+date
