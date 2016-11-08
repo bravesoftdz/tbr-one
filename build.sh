@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 date
 rm -rf kernels
